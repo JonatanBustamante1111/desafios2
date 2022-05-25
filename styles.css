@@ -15,11 +15,75 @@
 body{
     font-size: 18px;
 }
+.main-container{ 
+    background-color:var(--VeryDarkBlueLine);
+    width: 280px;
+    height: 500px;
+    margin: 60px auto;
+    border-radius: 16px;
+    padding: 26px;
 
-/* h1{
+}
+.image-container{
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+ } 
+ .title{
     color: var(--White);
     font-family: 'Outfit', sans-serif;
-} */
+    font-size: 22px;
+    margin-bottom: 20px;
+ }
+ .text-nft{
+     color: var(--SoftBlue);
+     font-family: 'Outfit', sans-serif;
+     margin-bottom: 20px;
+ }
+ .value-time-container{
+     display: flex;
+
+ }
+ .value-eth{
+     color: var(--Cyan);
+     font-size: 16px;
+ }
+ .time-preventa{
+     margin-bottom: 20px;
+     font-family: 'Outfit', sans-serif;
+     font-size: 16px;
+     color: var(--SoftBlue);
+ }
+ .avatar-text-container{
+     display: flex;
+ }
+ .image-avatar{
+    background-image:url(./images/image-avatar.png);
+    background-size: cover;
+    width: 31px;
+    height: 31px;
+    border: 1px solid var(--White);
+    border-radius: 40px;
+    margin-right: 10px;
+ }
+ .text-container{
+     padding-top:5px;
+ }
+ .text-creator{
+     color:var(--SoftBlue);
+     font-size: 17px;
+     font-family: 'Outfit', sans-serif;
+}
+ .text-name-avatar{
+     font-family: 'Outfit', sans-serif;
+     font-size: 17px;
+     text-decoration: none;
+     color:var(--White);
+     margin-left: 5px;
+ }
 /* ----footer----- */
 .attribution { 
     font-size: 11px; 

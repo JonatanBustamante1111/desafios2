@@ -6,23 +6,25 @@
 }
 :root{
     --SoftBlue: hsl(215, 51%, 70%);
-    --Cyan: hsl(178, 100%, 50%);
+    --Cyan: hsla(178, 100%, 50%, 0.5);
+    --Cyan2:hsla(178, 100%, 50%);
     --VeryDarkBlueMainBG: hsl(217, 54%, 11%);
     --VeryDarkBlueCardBG: hsl(216, 50%, 16%);
     --VeryDarkBlueLine: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 }
 body{
+    font-family: 'Outfit', sans-serif;
     font-size: 18px;
+    background-color: var(--VeryDarkBlueMainBG);
 }
 .main-container{ 
-    background-color:var(--VeryDarkBlueLine);
+    background-color: var(--VeryDarkBlueCardBG);
     width: 280px;
-    height: 500px;
+    height: 490px;
     margin: 60px auto;
     border-radius: 16px;
     padding: 26px;
-
 }
 .image-container{
     background-image: url(./images/image-equilibrium.jpg);
@@ -31,34 +33,65 @@ body{
     height: 280px;
     border-radius: 10px;
     margin-bottom: 20px;
+    overflow: hidden;
  } 
+ .image-eye{
+     opacity: 0;
+     background-color: var(--Cyan);
+     background-image: url(./images/icon-view.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 100%;
+     height: 100%;
+ }
+ .image-eye:hover{
+     opacity: 1;
+     cursor: pointer;
+
+ }
  .title{
     color: var(--White);
-    font-family: 'Outfit', sans-serif;
     font-size: 22px;
     margin-bottom: 20px;
  }
  .text-nft{
      color: var(--SoftBlue);
-     font-family: 'Outfit', sans-serif;
+     font-size: 16px;
+     font-weight: 300;
      margin-bottom: 20px;
  }
  .value-time-container{
      display: flex;
-
+     justify-content: space-between;
+     margin-bottom: 20px;
  }
  .value-eth{
-     color: var(--Cyan);
+     display: flex;
+     align-items: center;
      font-size: 16px;
+     color: var(--Cyan2);
+     font-weight: 600;
+ }
+ .value-eth spam{
+     margin-left: 10px;
  }
  .time-preventa{
-     margin-bottom: 20px;
-     font-family: 'Outfit', sans-serif;
+     display: flex;
+     align-items: center;
      font-size: 16px;
      color: var(--SoftBlue);
  }
+.time-preventa spam{
+    margin-left: 10px;
+}
+ .line { 
+    border: 1px solid var(--VeryDarkBlueLine);
+    margin-bottom: 15px;
+ }
+
  .avatar-text-container{
      display: flex;
+     align-items: center;
  }
  .image-avatar{
     background-image:url(./images/image-avatar.png);
@@ -67,15 +100,13 @@ body{
     height: 31px;
     border: 1px solid var(--White);
     border-radius: 40px;
-    margin-right: 10px;
- }
- .text-container{
-     padding-top:5px;
- }
+    margin-right: 15px;
+ } 
  .text-creator{
      color:var(--SoftBlue);
      font-size: 17px;
      font-family: 'Outfit', sans-serif;
+     font-weight: 300;
 }
  .text-name-avatar{
      font-family: 'Outfit', sans-serif;
